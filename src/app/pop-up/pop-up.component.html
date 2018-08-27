@@ -1,0 +1,16 @@
+<div class="modal" id="naoQuest">
+	<div class="modal-container">
+		<div class="modal-header">
+			<h1>{{titModal}}</h1>
+			<button (click)="NaoQuestionarioFecha()">x</button>
+		</div>
+		<div class="modal-content">
+			<p>{{txtModal}}</p>
+		</div>
+		<form class="modal-footer" (submit)="EnviarTermo()">
+			<hr>
+			<input type="checkbox" name="termo" (click)="AtivaBotao()"> <label for="termo">{{txtAceite}}</label>
+			<button id="EnviaNaoQuest" disabled="disabled">{{lblButton}}</button>
+		</form>
+	</div>
+</div>

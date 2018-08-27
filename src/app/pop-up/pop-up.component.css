@@ -1,0 +1,108 @@
+.modal {
+    position: fixed;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.4);
+    z-index: 99999;
+    font-family: Arial, Verdana, sans-serif;
+    font-size: 16px;
+}
+.modal .active {
+	display: flex;
+}
+.modal-container {
+	position: relative;
+	display: table;
+	overflow-y: hidden;
+	width: 100%;
+	max-width: 520px;
+	min-height: 300px;
+	background-color: #FFF;
+	padding: 0px;
+	border-radius: 5px;
+}
+.modal-header {
+	position: relative;
+	display: block;
+	width: 100%;
+	padding: 0px 15px;
+	box-sizing: border-box;
+}
+.modal-header h1 {
+	position: relative;
+	font-size: 16px;
+	color: #5c102a;
+	text-align: center;
+	text-transform: uppercase;
+}
+.modal-header button {
+    position: absolute;
+    display: block;
+    top: -10px;
+    right: 0px;
+    overflow: hidden;
+    border: none;
+    background: transparent;
+    font-size: 20px;
+    font-weight: bold;
+    color: #AAA;
+    text-align: center;
+    outline: none;
+    cursor: pointer;
+}
+.modal-content {
+	position: relative;
+	display: table;
+	width: 100%;
+	padding: 0px 30px;
+	box-sizing: border-box;
+	line-height: 25px;
+	font-weight: bold;
+}
+.modal-content p {
+	margin: 0px;
+}
+.modal-footer {
+	position: relative;
+	display: block;
+	width: 100%;
+	padding: 15px 30px;
+	box-sizing: border-box;
+	font-size: 12px;
+	color: #AAA;
+	text-align: center;
+}
+.modal-footer hr {
+	background-color: transparent;
+	border: none;
+	border-top: 2px dashed #CCC;
+}
+.modal-footer input[type="checkbox"], .modal-footer labe {
+	position: relative;
+	display: inline-block;
+	vertical-align: middle;
+}
+.modal-footer button {
+	position: relative;
+	display: block;
+	margin: 10px auto;
+	padding: 10px 70px;
+	border: 1px transparent solid;
+	border-radius: 5px;
+	background-color: #feb70d;
+	font-family: Arial, Verdana, sans-serif;
+	font-size: 12px;
+	color: #FFF;
+	outline: none;
+}
+.modal-footer button[disabled] {
+	border: 1px #feb70d solid;
+	background-color: #FFF;
+	color: #feb70d;
+
+}
