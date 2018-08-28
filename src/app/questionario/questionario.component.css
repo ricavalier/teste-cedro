@@ -46,11 +46,13 @@ label {
 	padding: 15px;
 	box-sizing: border-box;
 	color: #CCC;
-	font-size: 12px;
+	font-size: 10px;
 	text-transform: uppercase;
+	vertical-align: top;
 }
 article:nth-child(4) label {
-	width: calc(100%/4);
+	width: calc(98%/4);
+	min-width: 195px;
 }
 label:hover {
 	color: #882345;
@@ -59,20 +61,22 @@ label:hover {
 label > input {
 	position: relative;
 	display: inline-block;
-	vertical-align: top;
+	vertical-align: middle;
 }
 label > span {
 	position: relative;
 	display: inline-block;
 	width: calc(100% - 30px);
-	vertical-align: top;
+	vertical-align: middle;
 }
 article:nth-child(4) label > span {
 	width: 100%;
 	display: block;
-
 }
-
+article:nth-child(4) label > select {
+	margin-top: 10px;
+	width: 100%;
+}
 
 button {
 	position: relative;
