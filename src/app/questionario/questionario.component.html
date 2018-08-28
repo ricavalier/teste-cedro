@@ -1,3 +1,79 @@
-<p>
-  questionario works!
-</p>
+<main>
+	<h1>{{title}}</h1>
+	<section>
+		<article>
+			<p>{{pid1}} - {{p1}}</p>
+			<label>
+				<input type="radio" name="{{pid1}}" value="{{p1rid1}}">
+				<span>{{p1r1}}</span>
+			</label>
+			<label>
+				<input type="radio" name="{{pid1}}" value="{{p1rid2}}">
+				<span>{{p1r2}}</span>
+			</label>
+			<label>
+				<input type="radio" name="{{pid1}}" value="{{p1rid3}}">
+				<span>{{p1r3}}</span>
+			</label>
+		</article>
+		<article>
+			<p>{{pid2}} - {{p2}}</p>
+			<label>
+				<input type="radio" name="{{pid2}}" value="{{p2rid1}}">
+				<span>{{p2r1}}</span>
+			</label>
+			<label>
+				<input type="radio" name="{{pid2}}" value="{{p2rid2}}">
+				<span>{{p2r2}}</span>
+			</label>
+			<label>
+				<input type="radio" name="{{pid2}}" value="{{p2rid3}}">
+				<span>{{p2r3}}</span>
+			</label>
+		</article>
+		<article>
+			<p>{{pid3}} - {{p3}}</p>
+			<label>
+				<input type="radio" name="{{pid3}}" value="{{p3rid1}}">
+				<span>{{p3r1}}</span>
+			</label>
+			<label>
+				<input type="radio" name="{{pid3}}" value="{{p3rid2}}">
+				<span>{{p3r2}}</span>
+			</label>
+			<label>
+				<input type="radio" name="{{pid3}}" value="{{p3rid3}}">
+				<span>{{p3r3}}</span>
+			</label>
+		</article>
+		<article>
+			<p>{{pid4}} - {{p4}}</p>
+			<label>
+				<span>{{p4r1}}</span>
+				<select name="{{pid4}}-1" >
+					<option>Selecione</option>
+				</select>
+			</label>
+			<label>
+				<span>{{p4r2}}</span>
+				<select name="{{pid4}}-2" >
+					<option>Selecione</option>
+				</select>
+			</label>
+			<label>
+				<span>{{p4r3}}</span>
+				<select name="{{pid4}}-3" >
+					<option>Selecione</option>
+				</select>
+			</label>
+			<label>
+				<span>{{p4r4}}</span>
+				<select name="{{pid4}}-4" >
+					<option>Selecione</option>
+				</select>
+			</label>
+		</article>
+		<p><button (click)="Voltar()">Voltar</button><button (click)="Salvar()">Salvar</button></p>
+	</section>
+</main>
+<app-confirmacao></app-confirmacao>

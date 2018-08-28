@@ -9,9 +9,13 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { PopUpComponent } from './pop-up/pop-up.component';
 import { QuestionarioComponent } from './questionario/questionario.component';
+import { ConfirmacaoComponent } from './confirmacao/confirmacao.component';
+
+import { QuestionarioService } from './app.service';
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent },
+  { path: 'inicio', component: HomeComponent },
   { path: 'questionario', component: QuestionarioComponent }
 ];
 
@@ -20,7 +24,8 @@ const appRoutes: Routes = [
     AppComponent,
     HomeComponent,
     PopUpComponent,
-    QuestionarioComponent
+    QuestionarioComponent,
+    ConfirmacaoComponent
   ],
   imports: [
     BrowserModule,
@@ -28,7 +33,7 @@ const appRoutes: Routes = [
     HttpModule,
     RouterModule.forRoot(appRoutes)
   ],
-  providers: [],
+  providers: [QuestionarioService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

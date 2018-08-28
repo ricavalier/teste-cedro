@@ -18,12 +18,12 @@ export class HomeComponent implements OnInit {
   }
 
   NaoQuestionario() {
-  	document.getElementById("naoQuest").setAttribute('style', 'display:flex');
+  	document.querySelector("#naoQuest").setAttribute('style', 'display:flex');
   }
-/*
-  NaoQuestionarioFecha() {
-  	document.getElementById("naoQuest").removeAttribute('style');
-  }*/
+
+  Questionario() {
+  	window.location.href = "/questionario";
+  }
 
 }
 

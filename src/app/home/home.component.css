@@ -33,16 +33,16 @@ button {
 	position: relative;
 	padding: 10px 40px;
 	margin: 5px;
-	border: 1px solid #5c102a;
+	border: 1px solid #882345;
 	border-radius: 5px;
 	background-color: #FFF;
 	font-family: Arial, Verdana, sans-serif;
 	font-size: 11px;
-	color: #5c102a;
+	color: #882345;
 	text-transform: uppercase;
 	cursor: pointer;
 }
 button:hover {
-	background-color: #5c102a;
+	background-color: #882345;
 	color: #FFF;
 }
